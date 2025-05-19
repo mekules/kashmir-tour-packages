@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rover Travels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background-color: #f0f4f8;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x900/?santorini,travel') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .search-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .search-box input, .search-box button {
+      padding: 0.75rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .search-box button {
+      background-color: #0099cc;
+      color: white;
+      cursor: pointer;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .popular-hotels, .packages, .services {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #0099cc;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rover Travels</h1>
+    <p>Your Journey Begins Here</p>
+    <div class="search-box">
+      <input type="text" placeholder="Where to?">
+      <input type="date">
+      <input type="number" placeholder="Guests">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <section class="popular-hotels">
+    <h2>Popular Hotels</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?hotel,resort" alt="Hotel">
+        <div class="card-content">
+          <h3>Sunset Paradise</h3>
+          <p>Experience luxury in the heart of the city.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?villa,beach" alt="Hotel">
+        <div class="card-content">
+          <h3>Ocean Villa</h3>
+          <p>Wake up to the sound of waves and stunning views.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>Holiday Packages</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mountains,adventure" alt="Package">
+        <div class="card-content">
+          <h3>Adventure Escapes</h3>
+          <p>Thrilling activities and unforgettable experiences.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?culture,travel" alt="Package">
+        <div class="card-content">
+          <h3>Cultural Wonders</h3>
+          <p>Discover history and traditions across continents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Flight and Hotel Bookings</li>
+      <li>Customized Tour Packages</li>
+      <li>Car Rentals and Airport Transfers</li>
+      <li>Corporate Travel Solutions</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rover Travels. All rights reserved. | contact@rovertravels.com</p>
+  </footer>
+</body>
+</html>
